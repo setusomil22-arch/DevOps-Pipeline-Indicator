@@ -1,0 +1,22 @@
+
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+
+  pre_build:
+    commands:
+      - echo "Preparing build"
+
+  build:
+    commands:
+      - echo "Starting build"
+      - test -f README.md
+      - echo "Build completed successfully"
+
+  post_build:
+    commands:
+      - echo "All tests completed"
+
